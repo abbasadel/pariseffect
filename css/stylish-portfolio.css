@@ -265,3 +265,11 @@ header {
   /* Set the opacity for a slightly transparent Google Form */
   color: white;
 }
+
+#footer-note{
+    position: absolute;
+    bottom: 0px;
+    color: #333;
+    text-align: center;
+    width: 100%;
+}
