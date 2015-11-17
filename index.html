@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Paris Effect</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap.</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>The Paris Effect</h1>
+            <h3>An attempt to track the spread of violent incidents targeting Arabs/Muslims <br /> following the Paris attacks on the 13th of November 2015</h3>
+            <br>
+            <a href="#about" class="btn btn-danger btn-lg">Report an Incident</a>
+        </div>
+    </header>
+
+
+
+
+
+
+    <div id="googlemaps">
+        <iframe
+            src="https://www.google.com/maps/d/embed?mid=zA4spRyCAX2s.k3rGt5eOvjIM"
+            width="100%"
+            height="121%"
+            frameborder="0"
+            style="border:0; margin-top: -166px; overflow:hidden">
+        </iframe>
+    </div>
+    <!-- Map -->
+    <!-- <section id="googlemaps" class="map"> -->
+        <!-- <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+        </iframe> -->
+        <!-- <div style="width:100%;">
+
+          <table id="cm_mapTABLE"> <tbody> <tr id="cm_mapTR">
+              <td>  </td>
+          </tr> </tbody></table>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <!-- <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>The Paris Effect</strong>
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:paris.effect.org@gmail.com">paris.effect.org@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; The Paris Effect 13/11/2015</p>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+    <script src="http://maps.google.com/maps?file=api&v=2&key="
+      type="text/javascript"></script>
+
+    <script type="text/javascript">
+    //<![CDATA[
+    var cm_map;
+    var cm_mapMarkers = [];
+    var cm_mapHTMLS = [];
+
+    // Create a base icon for all of our markers that specifies the
+    // shadow, icon dimensions, etc.
+    var cm_baseIcon = new GIcon();
+    cm_baseIcon.shadow = "http://www.google.com/mapfiles/shadow50.png";
+    cm_baseIcon.iconSize = new GSize(20, 34);
+    cm_baseIcon.shadowSize = new GSize(37, 34);
+    cm_baseIcon.iconAnchor = new GPoint(9, 34);
+    cm_baseIcon.infoWindowAnchor = new GPoint(9, 2);
+    cm_baseIcon.infoShadowAnchor = new GPoint(18, 25);
+
+    // Change these parameters to customize map
+    var param_wsId = "od6";
+    var param_ssKey = "o16162288751915453340.4402783830945175750";
+    var param_useSidebar = false;
+    var param_titleColumn = "title";
+    var param_descriptionColumn = "description";
+    var param_latColumn = "latitude";
+    var param_lngColumn = "longitude";
+    var param_rankColumn = "rank";
+    var param_iconType = "green";
+    var param_iconOverType = "orange";
+
+    /**
+     * Loads map and calls function to load in worksheet data.
+     */
+    function cm_load() {
+      if (GBrowserIsCompatible()) {
+        // create the map
+        cm_map = new GMap2(document.getElementById("cm_map"));
+        cm_map.addControl(new GLargeMapControl());
+        cm_map.addControl(new GMapTypeControl());
+        cm_map.setCenter(new GLatLng( 43.907787,-79.359741), 2);
+        cm_getJSON();
+      } else {
+        alert("Sorry, the Google Maps API is not compatible with this browser");
+      }
+    }
+
+    /**
+     * Function called when marker on the map is clicked.
+     * Opens an info window (bubble) above the marker.
+     * @param {Number} markerNum Number of marker in global array
+     */
+    function cm_markerClicked(markerNum) {
+      cm_mapMarkers[markerNum].openInfoWindowHtml(cm_mapHTMLS[markerNum]);
+    }
+
+    /**
+     * Function that sorts 2 worksheet rows from JSON feed
+     * based on their rank column. Only called if column is defined.
+     * @param {rowA} Object Represents row in JSON feed
+     * @param {rowB} Object Represents row in JSON feed
+     * @return {Number} Difference between row values
+     */
+    function cm_sortRows(rowA, rowB) {
+      var rowAValue = parseFloat(rowA["gsx$" + param_rankColumn].$t);
+      var rowBValue = parseFloat(rowB["gsx$" + param_rankColumn].$t);
+
+      return rowAValue - rowBValue;
+    }
+
+    /**
+     * Called when JSON is loaded. Creates sidebar if param_sideBar is true.
+     * Sorts rows if param_rankColumn is valid column. Iterates through worksheet rows,
+     * creating marker and sidebar entries for each row.
+     * @param {JSON} json Worksheet feed
+     */
+    function cm_loadMapJSON(json) {
+      var usingRank = false;
+
+      if(param_useSidebar == true) {
+        var sidebarTD = document.createElement("td");
+        sidebarTD.setAttribute("width","150");
+        sidebarTD.setAttribute("valign","top");
+        var sidebarDIV = document.createElement("div");
+        sidebarDIV.id = "cm_sidebarDIV";
+        sidebarDIV.style.overflow = "auto";
+        sidebarDIV.style.height = "450px";
+        sidebarDIV.style.fontSize = "11px";
+        sidebarDIV.style.color = "#000000";
+        sidebarTD.appendChild(sidebarDIV);
+        document.getElementById("cm_mapTR").appendChild(sidebarTD);
+      }
+
+      var bounds = new GLatLngBounds();
+
+      if(json.feed.entry[0]["gsx$" + param_rankColumn]) {
+        usingRank = true;
+        json.feed.entry.sort(cm_sortRows);
+      }
+
+      for (var i = 0; i < json.feed.entry.length; i++) {
+        var entry = json.feed.entry[i];
+        if(entry["gsx$" + param_latColumn]) {
+          var lat = parseFloat(entry["gsx$" + param_latColumn].$t);
+          var lng = parseFloat(entry["gsx$" + param_lngColumn].$t);
+          var point = new GLatLng(lat,lng);
+          var html = "<div style='font-size:12px'>";
+          html += "<strong>" + entry["gsx$"+param_titleColumn].$t
+                  + "</strong>";
+          var label = entry["gsx$"+param_titleColumn].$t;
+          var rank = 0;
+          if(usingRank && entry["gsx$" + param_rankColumn]) {
+            rank = parseInt(entry["gsx$"+param_rankColumn].$t);
+          }
+          if(entry["gsx$" + param_descriptionColumn]) {
+            html += "<br/>" + entry["gsx$"+param_descriptionColumn].$t;
+          }
+          html += "</div>";
+
+          // create the marker
+          var marker = cm_createMarker(point,label,html,rank);
+          cm_map.addOverlay(marker);
+          cm_mapMarkers.push(marker);
+          cm_mapHTMLS.push(html);
+          bounds.extend(point);
+
+          if(param_useSidebar == true) {
+            var markerA = document.createElement("a");
+            markerA.setAttribute("href","javascript:cm_markerClicked('" + i +"')");
+            markerA.style.color = "#000000";
+            var sidebarText= "";
+            if(usingRank) {
+              sidebarText += rank + ") ";
+            }
+            sidebarText += label;
+            markerA.appendChild(document.createTextNode(sidebarText));
+            sidebarDIV.appendChild(markerA);
+            sidebarDIV.appendChild(document.createElement("br"));
+            sidebarDIV.appendChild(document.createElement("br"));
+          }
+        }
+      }
+
+      cm_map.setZoom(cm_map.getBoundsZoomLevel(bounds));
+      cm_map.setCenter(bounds.getCenter());
+    }
+
+    /**
+     * Creates marker with ranked Icon or blank icon,
+     * depending if rank is defined. Assigns onclick function.
+     * @param {GLatLng} point Point to create marker at
+     * @param {String} title Tooltip title to display for marker
+     * @param {String} html HTML to display in InfoWindow
+     * @param {Number} rank Number rank of marker, used in creating icon
+     * @return {GMarker} Marker created
+     */
+    function cm_createMarker(point, title, html, rank) {
+      var markerOpts = {};
+      var nIcon = new GIcon(cm_baseIcon);
+
+      if(rank > 0 && rank < 100) {
+        nIcon.imageOut = "http://gmaps-samples.googlecode.com/svn/trunk/" +
+            "markers/" + param_iconType + "/marker" + rank + ".png";
+        nIcon.imageOver = "http://gmaps-samples.googlecode.com/svn/trunk/" +
+            "markers/" + param_iconOverType + "/marker" + rank + ".png";
+        nIcon.image = nIcon.imageOut;
+      } else {
+        nIcon.imageOut = "http://gmaps-samples.googlecode.com/svn/trunk/" +
+            "markers/" + param_iconType + "/blank.png";
+        nIcon.imageOver = "http://gmaps-samples.googlecode.com/svn/trunk/" +
+            "markers/" + param_iconOverType + "/blank.png";
+        nIcon.image = nIcon.imageOut;
+      }
+
+      markerOpts.icon = nIcon;
+      markerOpts.title = title;
+      var marker = new GMarker(point, markerOpts);
+
+      GEvent.addListener(marker, "click", function() {
+        marker.openInfoWindowHtml(html);
+      });
+      GEvent.addListener(marker, "mouseover", function() {
+        marker.setImage(marker.getIcon().imageOver);
+      });
+      GEvent.addListener(marker, "mouseout", function() {
+        marker.setImage(marker.getIcon().imageOut);
+      });
+      GEvent.addListener(marker, "infowindowopen", function() {
+        marker.setImage(marker.getIcon().imageOver);
+      });
+      GEvent.addListener(marker, "infowindowclose", function() {
+        marker.setImage(marker.getIcon().imageOut);
+      });
+      return marker;
+    }
+
+    /**
+     * Creates a script tag in the page that loads in the
+     * JSON feed for the specified key/ID.
+     * Once loaded, it calls cm_loadMapJSON.
+     */
+    function cm_getJSON() {
+
+      // Retrieve the JSON feed.
+      var script = document.createElement('script');
+
+      script.setAttribute('src', 'http://spreadsheets.google.com/feeds/list'
+                             + '/' + param_ssKey + '/' + param_wsId + '/public/values' +
+                            '?alt=json-in-script&callback=cm_loadMapJSON');
+      script.setAttribute('id', 'jsonScript');
+      script.setAttribute('type', 'text/javascript');
+      document.documentElement.firstChild.appendChild(script);
+    }
+
+    setTimeout('cm_load()', 500);
+
+    //]]>
+
+    </script>
+
+</body>
+
+</html>
