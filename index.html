@@ -80,9 +80,7 @@
             <h3>An attempt to track the spread of violent incidents targeting Arabs/Muslims <br /> following the Paris attacks on the 13th of November 2015</h3>
             <br>
             <a href="https://docs.google.com/forms/d/1Arho96I8RqRZIdIpqeQXtfovlVdBU8GwaRwe0miDrFQ/viewform" target="_blank" class="btn btn-danger btn-lg">Report an Incident</a>
-            <div id="footer-note">
-                By people to people. paris.effect.org[at]gmail.com
-            </div>
+
         </div>
     </header>
 
@@ -99,6 +97,9 @@
             frameborder="0"
             style="border:0; margin-top: -166px; overflow:hidden">
         </iframe> -->
+    </div>
+    <div id="footer-note">
+        By people to people. paris.effect.org[at]gmail.com
     </div>
     <!-- Map -->
     <!-- <section id="googlemaps" class="map"> -->
@@ -200,7 +201,7 @@
      //console.log(data);
 
      function showInfo(data) {
-       var optionsJSON = ["incidentdescription", "typeofincident", "incidentdate"]
+       var optionsJSON = ["incidentdescription", "typeofincident", "incidentdate", 'incidentcountry', 'incidentcity', 'linktoarticleorsourceofinformation']
        var geocodeURL = 'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyCEM3edAHanZa360b3hPAsLbuXs-s8KAqc&address=';
 
 
@@ -229,13 +230,13 @@
 
        })
 
-       var template = "<ul><li><a href='{{photo-url}}' target='_blank'>"
-                    + "<img src='{{photo-url}}'></a></li>"
-                    + "<li><h4>{{placename}}</h4></li></ul>"
-                    console.log(data);
+       var template = "<ul><li><a href='{{linktoarticleorsourceofinformation}}' target='_blank'>"
+                    + "{{incidentdescription}}"
+                    + "<li><h4>{{incidentcity}}, {{incidentcountry}}</h4></li></ul>"
+                    // console.log(data);
 
        var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
-        console.log(optionsJSON);
+        console.log(geoJSON);
        var map = Sheetsee.loadMap("googlemaps")
        Sheetsee.addTileLayer(map, 'jllord.n7aml2bc')
        Sheetsee.addMarkerLayer(geoJSON, map, template, true)
