@@ -80,7 +80,47 @@
             <h3>An attempt to track the spread of violent incidents targeting Arabs/Muslims <br /> following the Paris attacks on the 13th of November 2015</h3>
             <br>
             <a href="https://docs.google.com/forms/d/1Arho96I8RqRZIdIpqeQXtfovlVdBU8GwaRwe0miDrFQ/viewform" target="_blank" class="btn btn-danger btn-lg">Report an Incident</a>
+            <a href="https://docs.google.com/forms/d/1Arho96I8RqRZIdIpqeQXtfovlVdBU8GwaRwe0miDrFQ/viewform" target="_blank" class="btn btn-success btn-lg">Report a Good Initiative</a>
+            <br />
+            <a href="#" id="btn-text-hide"><i class="fa fa-map-marker"></i> Interact with the Map</a>
+            <div class="col-sm-12 cat-stats">
+                <!--
+Verbal Harrassment
+Physical Harrassment
+Destruction of property
+Physical attack on the victim
+Exclusion
+                -->
+                <div class="col-xs-1"></div>
 
+                <div class="col-xs-2" id="icon-cat-1">
+                    <img src="img/icons/Exclusion.png" class="img-responsive"/>
+                    <span class="counts"></span>
+                </div>
+
+                <div class="col-xs-2" id="icon-cat-2">
+                    <img src="img/icons/Physical attack on the victim.png" class="img-responsive"/>
+                    <span class="counts"></span>
+                </div>
+
+
+                <div class="col-xs-2" id="icon-cat-3">
+                    <img src="img/icons/Destruction of property.png" class="img-responsive"/>
+                    <span class="counts"></span>
+                </div>
+
+                <div class="col-xs-2" id="icon-cat-4">
+                    <img src="img/icons/Physical Harrassment.png" class="img-responsive"/>
+                    <span class="counts"></span>
+                </div>
+
+                <div class="col-xs-2" id="icon-cat-5">
+                    <img src="img/icons/Verbal Harrassment2.png" class="img-responsive"/>
+                    <span class="counts"></span>
+                </div>
+
+                <div class="col-xs-1"></div>
+            </div>
         </div>
     </header>
 
@@ -99,59 +139,11 @@
         </iframe> -->
     </div>
     <div id="footer-note">
+        <a href="#" id="btn-text-show" class="btn btn-default btn-lg" style="display: none;">Show Infomation</a>
+        <br />
         By people to people. paris.effect.org[at]gmail.com
     </div>
-    <!-- Map -->
-    <!-- <section id="googlemaps" class="map"> -->
-        <!-- <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
-        </iframe> -->
-        <!-- <div style="width:100%;">
 
-          <table id="cm_mapTABLE"> <tbody> <tr id="cm_mapTR">
-              <td>  </td>
-          </tr> </tbody></table>
-        </div>
-    </section> -->
-
-    <!-- Footer -->
-    <!-- <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>The Paris Effect</strong>
-                    </h4>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:paris.effect.org@gmail.com">paris.effect.org@gmail.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; The Paris Effect 13/11/2015</p>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-
-    <!-- jQuery -->
-
-    <!-- Bootstrap Core JavaScript -->
-
-    <!-- Custom Theme JavaScript -->
     <script>
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
@@ -166,7 +158,26 @@
     });
 
     // Scrolls to the selected menu item on the page
+    //
+
     $(function() {
+        $('#btn-text-hide').click(function(){
+            $( "header" ).slideToggle('slow', function(){
+                $('header').hide();
+                $('#btn-text-show').show();
+            });
+
+
+
+        })
+        $('#btn-text-show').click(function(){
+            $( "header" ).slideToggle( "slow", function() {
+                $('header').show();
+                $('#btn-text-show').hide();
+              });
+        })
+
+
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
@@ -204,16 +215,41 @@
        var optionsJSON = ["incidentdescription", "typeofincident", "incidentdate", 'incidentcountry', 'incidentcity', 'linktoarticleorsourceofinformation']
        var geocodeURL = 'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyCEM3edAHanZa360b3hPAsLbuXs-s8KAqc&address=';
 
-
+       var categoriesCount = [];
+       categoriesCount[0] = 0; //    Others
+       categoriesCount[1] = 0; //    Verbal Harrassment
+       categoriesCount[2] = 0; //    Physical Harrassment
+       categoriesCount[3] = 0; //    Destruction of property
+       categoriesCount[4] = 0; //    Physical attack on the victim
+       categoriesCount[5] = 0; //    Exclusion
+       console.log(data);
        $.each(data, function(i, item){
 
+
+           switch(item.typeofincident) {
+                case "Verbal Harrassment":
+                    categoriesCount[1]++;
+                    break;
+                case "Physical Harrassment":
+                    categoriesCount[2]++;
+                    break;
+                case "Destruction of property":
+                    categoriesCount[3]++;
+                    break;
+
+                case "Physical attack on the victim":
+                    categoriesCount[4]++;
+                    break;
+                case " Exclusion":
+                    categoriesCount[5]++;
+                    break;
+                default:
+                    categoriesCount[0]++;
+            }
+
+
            url = geocodeURL + item.incidentcity + ', ' + item.incidentcountry;
-        //    $.get( url, function( geodata ) {
-           //
-        //       item.lat = geodata.results[0].geometry.location.lat;
-        //       item.long = geodata.results[0].geometry.location.lng;
-        //     });
-        //
+
 
         $.ajax({
             url : url,
@@ -229,6 +265,12 @@
          });
 
        })
+
+       console.log(categoriesCount);
+
+       $.each(categoriesCount, function(i, count){
+          $('#icon-cat-' + i + ' span.counts').text(count);
+       });
 
        var template = "<ul><li><a href='{{linktoarticleorsourceofinformation}}' target='_blank'>"
                     + "{{incidentdescription}}"
