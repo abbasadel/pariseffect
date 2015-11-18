@@ -230,9 +230,9 @@
 
        })
 
-       var template = "<ul><li><a href='{{linktoarticleorsourceofinformation}}' target='_blank'>"
-                    + "{{incidentdescription}}"
-                    + "<li><h4>{{incidentcity}}, {{incidentcountry}}</h4></li></ul>"
+       var template = "<div><h4 style='color:#D9534F;' align='center'> <span class='fa fa-map-marker'> </span> {{incidentcity}}, {{incidentcountry}}</h4><h6 align='center'>{{incidentdate}}</h6>"
+                    + "<a href='{{linktoarticleorsourceofinformation}}' target='_blank'>"
+                    + "<p style='text-align: justify;text-justify: inter-word;color:#000;'>{{incidentdescription}}</p></a></div>"
                     // console.log(data);
 
        var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
