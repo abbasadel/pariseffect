@@ -1,0 +1,31 @@
+
+
+@media(max-width:767px){
+    .text-vertical-center h1 {
+        font-size: 3em;
+    }
+
+    .h3, h3 {
+        font-size: 18px;
+    }
+    .btn-lg {
+        font-size: 14px;
+    }
+
+    .cat-stats span.counts {
+        font-size: 0.9em;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    header{
+        top: 15%;
+    }
+
+    #footer-note {
+        margin-bottom: 15px;
+    }
+}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
