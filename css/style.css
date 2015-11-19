@@ -51,3 +51,9 @@
   .leaflet-popup-content h2 {margin-bottom: 4px;}
 
   img.petThumbs {height: 80px; width: 80px; border-radius: 1000px;}
+
+  .goal {
+    background: rgba(238, 238, 212, 0.57);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
