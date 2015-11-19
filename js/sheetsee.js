@@ -1657,7 +1657,7 @@ function pointJSON(lineItem, type, optionObj) {
         },
         "properties": {
           "marker-size": "small",
-          "marker-color": lineItem.hexcolor
+          "marker-color": "#bf4343"
         },
         "opts": optionObj
       }
@@ -1678,8 +1678,8 @@ function shapeJSON(lineItem, type, optionObj) {
           "coordinates": coords
         },
         "properties": {
-          "fillColor": lineItem.hexcolor,
-          "color": lineItem.hexcolor
+          "fillColor": '#bf4343',
+          "color": '#bf4343'
         },
         "opts": optionObj
       }
@@ -9594,13 +9594,13 @@ L.Path = L.Class.extend({
 
 	options: {
 		stroke: true,
-		color: '#0033ff',
+		color: '#bf4343',
 		dashArray: null,
 		weight: 5,
 		opacity: 0.5,
 
 		fill: false,
-		fillColor: null, //same as color by default
+		fillColor: '#bf4343', //same as color by default
 		fillOpacity: 0.2,
 
 		clickable: true
