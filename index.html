@@ -9,6 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <meta property="og:title" content="The Paris Effect" />
+	  <meta property="og:type" content="article" />
+	  <meta property="og:image" content="img/og.jpg" />
+	  <meta property="og:url" content="" />
+	  <meta property="og:description" content="An attempt to track the spread of violent incidents or good initiatives targeting Arabs/Muslims following the Paris attacks on the 13th of November 2015" />
+	  <meta property="og:site_name" content="The Paris Effect" />
+	  <meta property="fb:admins" content="" />
+
     <title>The Paris Effect</title>
 
     <!-- Bootstrap Core CSS -->
@@ -87,12 +95,12 @@
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1>The Paris Effect</h1>
-            <h3>An attempt to track the spread of violent incidents targeting Arabs/Muslims <br /> following the Paris attacks on the 13th of November 2015</h3>
+            <h3 class="goal">An attempt to track the spread of violent incidents or good initiatives targeting Arabs/Muslims <br /> following the Paris attacks on the 13th of November 2015</h3>
+            <a href="#" class="btn-default" id="btn-text-hide"><h4> <i class="fa fa-map-marker"> </i> Interact with the Map</h4></a>
             <br>
             <a href="https://docs.google.com/forms/d/1Arho96I8RqRZIdIpqeQXtfovlVdBU8GwaRwe0miDrFQ/viewform" target="_blank" class="btn btn-danger btn-lg raised">Report an Incident</a>
-            <a href="https://docs.google.com/forms/d/1Arho96I8RqRZIdIpqeQXtfovlVdBU8GwaRwe0miDrFQ/viewform" target="_blank" class="btn btn-success btn-lg raised">Report a Good Initiative</a>
+            <a href="https://docs.google.com/forms/d/1yhk_SytZogC5X51mAvJnjrKo-RIV0k5dofMgOZnvbmo/viewform" target="_blank" class="btn btn-success btn-lg raised">Report a Good Initiative</a>
             <br />
-            <a href="#" id="btn-text-hide"><i class="fa fa-map-marker"></i> Interact with the Map</a>
             <div class="col-sm-12 cat-stats">
                 <!--
 Verbal Harrassment
@@ -149,6 +157,8 @@ Exclusion
         </iframe> -->
     </div>
     <div id="footer-note">
+        <a href="http://www.facebook.com/pariseffectmap"><img src="img/f.png" width="27px"></a>
+        <a href="https://twitter.com/pariseffectmap"><img src="img/t.png"></a>
         <a href="#" id="btn-text-show" class="btn btn-primary raised btn-lg" style="display: none;">Show Infomation</a>
         <br />
         By people to people. paris.effect.org[at]gmail.com
@@ -282,9 +292,9 @@ Exclusion
           $('#icon-cat-' + i + ' span.counts').text(count);
        });
 
-       var template = "<ul><li><a href='{{linktoarticleorsourceofinformation}}' target='_blank'>"
-                    + "{{incidentdescription}}"
-                    + "<li><h4>{{incidentcity}}, {{incidentcountry}}</h4></li></ul>"
+       var template = "<div><h4 style='color:#D9534F;' align='center'> <span class='fa fa-map-marker'> </span> {{incidentcity}}, {{incidentcountry}}</h4><h6 align='center'>{{incidentdate}}</h6>"
+                    + "<a href='{{linktoarticleorsourceofinformation}}' target='_blank'>"
+                    + "<p style='text-align: justify;text-justify: inter-word;color:#000;'>{{incidentdescription}}</p></a></div>"
                     // console.log(data);
 
        var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
@@ -292,7 +302,6 @@ Exclusion
        var map = Sheetsee.loadMap("googlemaps")
        Sheetsee.addTileLayer(map, 'jllord.n7aml2bc')
        Sheetsee.addMarkerLayer(geoJSON, map, template, true)
-
 
 
 
