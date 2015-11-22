@@ -49,6 +49,7 @@ Route::get('/', function () {
         return $data;
     });
 
-    dd($data);
+    //dd($data);
+    return view('welcome');
 
 });
