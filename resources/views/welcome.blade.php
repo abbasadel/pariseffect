@@ -9,6 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <meta property="og:title" content="The Paris Effect" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="http://pariseffect.org/img/og.jpg" />
+    <meta property="og:url" content="http://pariseffect.org" />
+    <meta property="og:description" content="An attempt to track the spread of violent incidents or good initiatives targeting Arabs/Muslims following the Paris attacks on the 13th of November 2015" />
+    <meta property="og:site_name" content="The Paris Effect" />
+    <meta property="fb:admins" content="" />
+
     <title>The Paris Effect</title>
 
     <!-- Bootstrap Core CSS -->
@@ -46,14 +54,20 @@
     <link rel="stylesheet" href="css/MarkerCluster.Default.css" />
 
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-71480-18', 'auto');
-      ga('send', 'pageview');
-
+        ga('create', 'UA-70310442-1', 'auto');
+        ga('send', 'pageview');
     </script>
 </head>
 
@@ -89,12 +103,15 @@
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1>The Paris Effect</h1>
-            <h3>An attempt to track the spread of violent incidents targeting Arabs/Muslims <br /> following the Paris attacks on the 13th of November 2015</h3>
+            <h3 class="goal">An attempt to track the spread of violent incidents or good initiatives targeting Arabs/Muslims
+                <br /> following the Paris attacks on the 13th of November 2015</h3>
+            <a href="#" class="btn-default" id="btn-text-hide">
+                <h4> <i class="fa fa-map-marker"> </i> Interact with the Map</h4>
+            </a>
             <br>
             <a href="https://docs.google.com/forms/d/1Arho96I8RqRZIdIpqeQXtfovlVdBU8GwaRwe0miDrFQ/viewform" target="_blank" class="btn btn-danger btn-lg raised">Report an Incident</a>
-            <a href="https://docs.google.com/forms/d/1Arho96I8RqRZIdIpqeQXtfovlVdBU8GwaRwe0miDrFQ/viewform" target="_blank" class="btn btn-success btn-lg raised">Report a Good Initiative</a>
+            <a href="https://docs.google.com/forms/d/1yhk_SytZogC5X51mAvJnjrKo-RIV0k5dofMgOZnvbmo/viewform" target="_blank" class="btn btn-success btn-lg raised">Report a Good Initiative</a>
             <br />
-            <a href="#" id="btn-text-hide"><i class="fa fa-map-marker"></i> Interact with the Map</a>
             <div class="col-sm-12 cat-stats">
                 <!--
 Verbal Harrassment
@@ -106,28 +123,28 @@ Exclusion
                 <div class="col-sm-1 col-xs-2"></div>
 
                 <div class="col-sm-2 col-xs-4" id="icon-cat-1">
-                    <img src="img/icons/Exclusion.png" class="img-responsive"/>
+                    <img src="img/icons/Exclusion.png" class="img-responsive" />
                     <span class="counts"></span>
                 </div>
 
                 <div class="col-sm-2 col-xs-4" id="icon-cat-2">
-                    <img src="img/icons/Physical attack on the victim.png" class="img-responsive"/>
+                    <img src="img/icons/Physical attack on the victim.png" class="img-responsive" />
                     <span class="counts"></span>
                 </div>
 
 
                 <div class="col-sm-2 col-xs-4" id="icon-cat-3">
-                    <img src="img/icons/Destruction of property.png" class="img-responsive"/>
+                    <img src="img/icons/Destruction of property.png" class="img-responsive" />
                     <span class="counts"></span>
                 </div>
 
                 <div class="col-sm-2 col-xs-4" id="icon-cat-4">
-                    <img src="img/icons/Physical Harrassment.png" class="img-responsive"/>
+                    <img src="img/icons/Physical Harrassment.png" class="img-responsive" />
                     <span class="counts"></span>
                 </div>
 
                 <div class="col-sm-2 col-xs-4" id="icon-cat-5">
-                    <img src="img/icons/Verbal Harrassment2.png" class="img-responsive"/>
+                    <img src="img/icons/Verbal Harrassment2.png" class="img-responsive" />
                     <span class="counts"></span>
                 </div>
 
@@ -137,198 +154,151 @@ Exclusion
     </header>
 
 
-
-
-
-
     <div id="googlemaps">
-        <!-- <iframe
-            src="https://www.google.com/maps/d/embed?mid=zA4spRyCAX2s.k3rGt5eOvjIM"
-            width="100%"
-            height="121%"
-            frameborder="0"
-            style="border:0; margin-top: -166px; overflow:hidden">
-        </iframe> -->
     </div>
+
     <div id="footer-note">
+        <a href="http://www.facebook.com/pariseffectmap">
+            <img src="img/f.png" width="27px">
+        </a>
+        <a href="https://twitter.com/pariseffectmap">
+            <img src="img/t.png">
+        </a>
         <a href="#" id="btn-text-show" class="btn btn-primary raised btn-lg" style="display: none;">Show Infomation</a>
-        <br />
-        By people to people. paris.effect.org[at]gmail.com
+        <br /> By people to people. paris.effect.org[at]gmail.com
     </div>
 
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+        // Closes the sidebar menu
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
 
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+        // Opens the sidebar menu
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
 
-    // Scrolls to the selected menu item on the page
-    //
+        // Scrolls to the selected menu item on the page
+        //
 
-    $(function() {
-        $('#btn-text-hide').click(function(){
-            $( "header" ).slideToggle('slow', function(){
-                $('header').hide();
-                $('#btn-text-show').show();
+        $(function() {
+            $('#btn-text-hide').click(function() {
+                $("header").slideToggle('slow', function() {
+                    $('header').hide();
+                    $('#btn-text-show').show();
+                });
+
+
+
+            })
+            $('#btn-text-show').click(function() {
+                $("header").slideToggle("slow", function() {
+                    $('header').show();
+                    $('#btn-text-show').hide();
+                });
+            })
+
+
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
             });
 
-
-
-        })
-        $('#btn-text-show').click(function(){
-            $( "header" ).slideToggle( "slow", function() {
-                $('header').show();
-                $('#btn-text-show').hide();
-              });
-        })
-
-
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
+            // setup data
+            $.ajax({
+                url: 'data',
+                type: "get",
+                async: false,
+                success: function(data) {
+                    showInfo(data);
+                },
+                error: function() {
+                    //connectionError();
                 }
-            }
+            });
         });
-    });
-    //sheets
+
+
+
+        function showInfo(data) {
+            var optionsJSON = ["description", "type", "date", 'country', 'city', 'link']
+
+
+            var categoriesCount = [];
+            categoriesCount[0] = 0; //    Others
+            categoriesCount[1] = 0; //    Verbal Harrassment
+            categoriesCount[2] = 0; //    Physical Harrassment
+            categoriesCount[3] = 0; //    Destruction of property
+            categoriesCount[4] = 0; //    Physical attack on the victim
+            categoriesCount[5] = 0; //    Exclusion
+
+
+            $.each(data, function(i, item) {
+
+                switch (item.type) {
+                    case "Verbal Harrassment":
+                        categoriesCount[1]++;
+                        break;
+                    case "Physical Harrassment":
+                        categoriesCount[2]++;
+                        break;
+                    case "Destruction of property":
+                        categoriesCount[3]++;
+                        break;
+
+                    case "Physical attack on the victim":
+                        categoriesCount[4]++;
+                        break;
+                    case " Exclusion":
+                        categoriesCount[5]++;
+                        break;
+                    default:
+                        categoriesCount[0]++;
+                }
+
+            })
+
+
+            $.each(categoriesCount, function(i, count) {
+                $('#icon-cat-' + i + ' span.counts').text(count);
+            });
+
+            var template = "<div><h4 style='color:#D9534F;' align='center'> <span class='fa fa-map-marker'> </span> @{{city}}, @{{country}}</h4><h6 align='center'>@{{date}}</h6>" + "<a href='@{{link}}' target='_blank'>" +
+                "<p style='text-align: justify;text-justify: inter-word;color:#000;'>@{{description}}</p></a></div>"
+                // console.log(data);
+
+            var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
+            var map = Sheetsee.loadMap("googlemaps")
+            Sheetsee.addTileLayer(map, 'jllord.n7aml2bc')
+            Sheetsee.addMarkerLayer(geoJSON, map, template, true)
+
+
+
+        }
+
+        function shapesMap(data) {
+            var opts = ['description']
+            var geojson = Sheetsee.createGeoJSON(data, opts)
+            var plytemplate = "<h4>@{{description}}</h4>"
+            var shapesmap = Sheetsee.loadMap("shapesmap")
+            Sheetsee.addTileLayer(shapesmap, 'jllord.n7aml2bc')
+            Sheetsee.addMarkerLayer(geojson, shapesmap, plytemplate)
+        }
+
 
     </script>
-    <!-- <script src="http://maps.google.com/maps?file=api&v=2&key="
-      type="text/javascript"></script> -->
-
-
-<script type="text/javascript">
-    //http://jlord.us/sheetsee.js/docs/sheetsee-maps.html
-    document.addEventListener('DOMContentLoaded', function() {
-    //    var URL = "0Ao5u1U6KYND7dGN5QngweVJUWE16bTRob0d2a3dCbnc";
-       var URL = "1pgSMWiUYHPJYhWELkexpszeNmRhO2rGna4GUB-5y_5M";
-    //    var URL2 = "1jOz6yFY5nIDre5RYtVROYPgIbkgh9lIddsyXo0-79_0"
-       Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true } )
-    //    Tabletop.init( { key: URL2, callback: shapesMap, simpleSheet: true } )
-     })
-
-     //console.log(data);
-
-     function showInfo(data) {
-       var optionsJSON = ["incidentdescription", "typeofincident", "incidentdate", 'incidentcountry', 'incidentcity', 'linktoarticleorsourceofinformation']
-       var geocodeURL = 'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyCEM3edAHanZa360b3hPAsLbuXs-s8KAqc&address=';
-
-       var categoriesCount = [];
-       categoriesCount[0] = 0; //    Others
-       categoriesCount[1] = 0; //    Verbal Harrassment
-       categoriesCount[2] = 0; //    Physical Harrassment
-       categoriesCount[3] = 0; //    Destruction of property
-       categoriesCount[4] = 0; //    Physical attack on the victim
-       categoriesCount[5] = 0; //    Exclusion
-       console.log(data);
-       $.each(data, function(i, item){
-
-
-           switch(item.typeofincident) {
-                case "Verbal Harrassment":
-                    categoriesCount[1]++;
-                    break;
-                case "Physical Harrassment":
-                    categoriesCount[2]++;
-                    break;
-                case "Destruction of property":
-                    categoriesCount[3]++;
-                    break;
-
-                case "Physical attack on the victim":
-                    categoriesCount[4]++;
-                    break;
-                case " Exclusion":
-                    categoriesCount[5]++;
-                    break;
-                default:
-                    categoriesCount[0]++;
-            }
-
-
-           url = geocodeURL + item.incidentcity + ', ' + item.incidentcountry;
-
-
-        $.ajax({
-            url : url,
-            type : "get",
-            async: false,
-            success : function(geodata) {
-                item.lat = geodata.results[0].geometry.location.lat;
-                item.long = geodata.results[0].geometry.location.lng;
-            },
-            error: function() {
-               //connectionError();
-            }
-         });
-
-       })
-
-       console.log(categoriesCount);
-
-       $.each(categoriesCount, function(i, count){
-          $('#icon-cat-' + i + ' span.counts').text(count);
-       });
-
-       var template = "<ul><li><a href='@{{linktoarticleorsourceofinformation}}' target='_blank'>"
-                    + "@{{incidentdescription}}"
-                    + "<li><h4>@{{incidentcity}}, @{{incidentcountry}}</h4></li></ul>"
-                    // console.log(data);
-
-       var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
-        console.log(geoJSON);
-       var map = Sheetsee.loadMap("googlemaps")
-       Sheetsee.addTileLayer(map, 'jllord.n7aml2bc')
-       Sheetsee.addMarkerLayer(geoJSON, map, template, true)
-
-
-
-
-     }
-
-     function shapesMap(data) {
-       var opts = ['description']
-       var geojson = Sheetsee.createGeoJSON(data, opts)
-       var plytemplate = "<h4>@{{description}}</h4>"
-       var shapesmap = Sheetsee.loadMap("shapesmap")
-       Sheetsee.addTileLayer(shapesmap, 'jllord.n7aml2bc')
-       Sheetsee.addMarkerLayer(geojson, shapesmap, plytemplate)
-     }
-
-  // window.onload = function() { init() };
-  //
-  // var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1pgSMWiUYHPJYhWELkexpszeNmRhO2rGna4GUB-5y_5M/pubhtml?gid=20392837&single=true';
-  //
-  //
-  //
-  //
-  // function init() {
-  //   Tabletop.init( { key: public_spreadsheet_url,
-  //                    callback: showInfo,
-  //                    simpleSheet: true } )
-  // }
-  //
-  // function showInfo(data, tabletop) {
-  //   //alert("Successfully processed!")
-  //   console.log(data);
-  // }
-</script>
-
-
 
 </body>
 

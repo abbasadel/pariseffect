@@ -8,7 +8,8 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
         "league/csv": "^7.2",
-        "kamranahmedse/php-geocode": "^1.1"
+        "kamranahmedse/php-geocode": "^1.1",
+        "laracasts/utilities": "^2.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
